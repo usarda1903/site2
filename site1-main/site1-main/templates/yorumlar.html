@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ product.name }} - Yorumlar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #6366f1;
+            --secondary: #a855f7;
+            --accent: #f59e0b;
+            --danger: #ef4444;
+            --glass: rgba(255, 255, 255, 0.05);
+            --glass-border: rgba(255, 255, 255, 0.1);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: radial-gradient(circle at top right, #1e1b4b, #0f172a);
+            background-attachment: fixed;
+            min-height: 100vh;
+            color: #f8fafc;
+            padding: 40px 20px;
+            line-height: 1.6;
+        }
+
+        .box {
+            max-width: 800px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--glass-border);
+            backdrop-filter: blur(20px);
+            padding: 35px;
+            border-radius: 24px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            font-weight: 800;
+            margin-bottom: 25px;
+            background: linear-gradient(to right, #818cf8, #f093fb);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        textarea {
+            width: 100%;
+            height: 100px;
+            background: rgba(0, 0, 0, 0.2);
+            border: 1px solid var(--glass-border);
+            border-radius: 15px;
+            padding: 15px;
+            color: white;
+            font-family: inherit;
+            font-size: 1rem;
+            resize: none;
+            transition: 0.3s;
+            margin-bottom: 15px;
+        }
+
+        textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        button {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 12px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            filter: brightness(1.1);
+            box-shadow: 0 10px 15px rgba(99, 102, 241, 0.3);
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid var(--glass-border);
+            margin: 30px 0;
+        }
+
+        .comment {
+            background: var(--glass);
+            border: 1px solid var(--glass-border);
+            padding: 20px;
+            border-radius: 18px;
+            margin-bottom: 15px;
+            position: relative;
+            transition: 0.3s;
+        }
+
+        .comment:hover {
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .user {
+            font-weight: 800;
+            color: var(--accent);
+            font-size: 0.95rem;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .comment-text {
+            color: #cbd5e1;
+            margin-bottom: 10px;
+        }
+
+        small {
+            color: #64748b;
+            font-size: 0.75rem;
+        }
+
+        .delete-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: var(--danger);
+            text-decoration: none;
+            font-size: 0.8rem;
+            font-weight: 600;
+            padding: 5px 10px;
+            background: rgba(239, 68, 68, 0.1);
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .delete-btn:hover {
+            background: var(--danger);
+            color: white;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 30px;
+            color: #94a3b8;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .back-link:hover {
+            color: var(--primary);
+            transform: translateX(-5px);
+        }
+
+        a { color: var(--primary); text-decoration: none; }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <h2>{{ product.emoji }} {{ product.name }} - Yorumlar</h2>
+
+    {% if session.username %}
+    <form method="POST">
+        <textarea name="yorum" placeholder="Bu efsunlu eşya hakkında ne düşünüyorsun?" required></textarea>
+        <button type="submit">🔮 Yorum Gönder</button>
+    </form>
+    {% else %}
+        <p style="text-align: center; padding: 20px; background: var(--glass); border-radius: 12px;">
+            Yorum yapmak için <a href="/login">giriş yapmalısın</a>.
+        </p>
+    {% endif %}
+
+    <hr>
+
+    <div class="comments-list">
+        {% for c in comments %}
+            <div class="comment">
+                <span class="user">{{ mask_username(c.user) }}</span>
+                <div class="comment-text">{{ c.text }}</div>
+                <small>{{ c.time }}</small>
+
+                {% if c.user == session.username %}
+                    <a href="/yorum_sil/{{ product.id }}/{{ c.id }}" class="delete-btn">Sil</a>
+                {% endif %}
+            </div>
+        {% else %}
+            <p style="text-align: center; color: #64748b;">Henüz bir fısıltı duyulmadı. İlk yorumu sen yap!</p>
+        {% endfor %}
+    </div>
+
+    <a href="/magaza" class="back-link">← Mağazaya Geri Dön</a>
+</div>
+
+</body>
+</html>

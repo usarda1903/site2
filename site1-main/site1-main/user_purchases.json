@@ -1,0 +1,181 @@
+{
+  "b92239e732dacf40ff61677a8e7c116e": {
+    "purchases": [
+      {
+        "product_id": "2",
+        "product_name": "Carnivorous Plant",
+        "price": 29.99,
+        "quantity": 1,
+        "timestamp": "2025-12-21T18:47:06.870579"
+      },
+      {
+        "product_id": "2",
+        "product_name": "Carnivorous Plant",
+        "price": 29.99,
+        "quantity": 1,
+        "timestamp": "2025-12-21T18:47:13.764844"
+      },
+      {
+        "product_id": "1",
+        "product_name": "Mystical Spell Book",
+        "price": 49.99,
+        "quantity": 1,
+        "timestamp": "2025-12-21T18:47:24.009235"
+      },
+      {
+        "product_id": "2",
+        "product_name": "Carnivorous Plant",
+        "price": 29.99,
+        "quantity": 1,
+        "timestamp": "2025-12-21T18:47:24.009235"
+      },
+      {
+        "product_id": "3",
+        "product_name": "Ancient Grimoire",
+        "price": 79.99,
+        "quantity": 1,
+        "timestamp": "2025-12-21T18:47:24.009235"
+      },
+      {
+        "product_id": "18",
+        "product_name": "ucma",
+        "price": 999.99,
+        "quantity": 1,
+        "timestamp": "2025-12-21T18:49:18.304694"
+      },
+      {
+        "product_id": "2",
+        "product_name": "Carnivorous Plant",
+        "price": 29.99,
+        "quantity": 1,
+        "timestamp": "2025-12-21T18:49:18.304694"
+      },
+      {
+        "product_id": "18",
+        "product_name": "ucma",
+        "price": 999.99,
+        "quantity": 1,
+        "timestamp": "2025-12-21T18:50:01.497073"
+      },
+      {
+        "product_id": "1",
+        "product_name": "Mystical Spell Book",
+        "price": 49.99,
+        "quantity": 1,
+        "timestamp": "2025-12-21T18:51:16.285872"
+      },
+      {
+        "product_id": "1",
+        "product_name": "Mystical Spell Book",
+        "timestamp": "2025-12-21T18:51:28.989454"
+      },
+      {
+        "product_id": "2",
+        "product_name": "Carnivorous Plant",
+        "timestamp": "2025-12-21T18:51:30.170481"
+      },
+      {
+        "product_id": "1",
+        "product_name": "Mystical Spell Book",
+        "price": 49.99,
+        "quantity": 1,
+        "timestamp": "2025-12-21T18:53:20.673886"
+      }
+    ]
+  },
+  "b78a76839c2ef34c3a1f00b51f5dca14": {
+    "purchases": [
+      {
+        "product_id": "1",
+        "product_name": "Mystical Spell Book",
+        "price": 49.99,
+        "quantity": 1,
+        "timestamp": "2025-12-21T18:47:22.882813"
+      },
+      {
+        "product_id": "2",
+        "product_name": "Carnivorous Plant",
+        "price": 29.99,
+        "quantity": 1,
+        "timestamp": "2025-12-21T18:47:22.882813"
+      },
+      {
+        "product_id": "3",
+        "product_name": "Ancient Grimoire",
+        "price": 79.99,
+        "quantity": 1,
+        "timestamp": "2025-12-21T18:47:22.882813"
+      },
+      {
+        "product_id": "1",
+        "product_name": "Mystical Spell Book",
+        "price": 49.99,
+        "quantity": 1,
+        "timestamp": "2025-12-21T18:54:39.481439"
+      },
+      {
+        "product_id": "19",
+        "product_name": "ferbod yipee",
+        "price": 2.2222222222222222e+64,
+        "quantity": 1,
+        "timestamp": "2025-12-21T18:54:39.481439"
+      },
+      {
+        "product_id": "2",
+        "product_name": "Carnivorous Plant",
+        "price": 29.99,
+        "quantity": 1,
+        "timestamp": "2025-12-21T18:54:39.481439"
+      },
+      {
+        "product_id": "3",
+        "product_name": "Ancient Grimoire",
+        "price": 79.99,
+        "quantity": 1,
+        "timestamp": "2025-12-21T18:54:39.481439"
+      },
+      {
+        "product_id": "4",
+        "product_name": "Enchanted Succulent",
+        "price": 19.99,
+        "quantity": 1,
+        "timestamp": "2025-12-21T18:54:39.481439"
+      },
+      {
+        "product_id": "5",
+        "product_name": "Potion Making Kit",
+        "price": 59.99,
+        "quantity": 1,
+        "timestamp": "2025-12-21T18:54:39.481439"
+      },
+      {
+        "product_id": "19",
+        "product_name": "ferbod yipee",
+        "price": 2.2222222222222222e+64,
+        "quantity": 3,
+        "timestamp": "2025-12-21T18:55:11.674401"
+      },
+      {
+        "product_id": "19",
+        "product_name": "ferbod yipee",
+        "price": 2.2222222222222222e+64,
+        "quantity": 1,
+        "timestamp": "2025-12-21T18:59:44.065323"
+      },
+      {
+        "product_id": "2",
+        "product_name": "Carnivorous Plant",
+        "price": 29.99,
+        "quantity": 1,
+        "timestamp": "2025-12-21T18:59:44.065323"
+      },
+      {
+        "product_id": "2",
+        "product_name": "Carnivorous Plant",
+        "price": 29.99,
+        "quantity": 1,
+        "timestamp": "2025-12-21T18:59:52.607127"
+      }
+    ]
+  }
+}

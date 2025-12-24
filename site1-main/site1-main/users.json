@@ -1,0 +1,114 @@
+{
+  "emre_admin": {
+    "password": "scrypt:32768:8:1$rT9hXVRLdGK9C4AN$abbe02f9e34de191693f10a3b36c88bb8bfe234527ac7c6e6833018552b964644ce48a204a33cb0ed6c7c17b573f74d69171454721f4f2d08924958903d09c00",
+    "role": "admin",
+    "active": true,
+    "banned": false
+  },
+  "farbod123": {
+    "password": "scrypt:32768:8:1$bWG5NEdopTDr2KIq$2af9e3eb5c931b2ea9fbe0ed347ae8a74a0c8b4fb0c15a6bf3706047e06e9b876632e5e36aa195e8bf02ee2fe9ef89bece65cb9dba36c3dbdc6fbd990c5fc3c3",
+    "role": "user",
+    "banned": true,
+    "active": false
+  },
+  "haha": {
+    "password": "scrypt:32768:8:1$8zGvTfV3jHRz4gwi$6204cab4442efceda49c15996992a47f354b52b0b7d562ca3e20fd9346625612628b0f53b608d448ca4cb60d0c01d698ae8f424f4c5d4ac0f94695e7d181808a",
+    "role": "admin",
+    "active": true,
+    "banned": false,
+    "avatar": "440302a3c5734a59a94af25d046ff844.png"
+  },
+  "arda": {
+    "password": "scrypt:32768:8:1$RkAsHMaXzsCWlcBL$307f109fc01a4a9ddf5359f85330b1a69a5fca5d57595f1a00cf779a7c12c43fe54a74f9de01a999a14af5503a1e2cd8c74640345ec1588f6f80d442a9fe0f8a",
+    "role": "admin",
+    "banned": false,
+    "active": true,
+    "avatar": "d9c1f1885f0b4c2ba908075ea0b3d3e1.jpeg"
+  },
+  "e": {
+    "password": "scrypt:32768:8:1$0v7VTxCGZkHd0X2A$7eeb0dcf017957374164c989b47bee2b885ba56b8f3acb799452780f5d56a7059b1671f0b3414d4b80d15d32aa1a52f0a3dfbf5055a7d0bd0d4cf9e02c3fe5e5",
+    "role": "user",
+    "banned": true,
+    "active": true
+  },
+  "emre": {
+    "password": "scrypt:32768:8:1$n4MtddSsnaOwTbpC$31d77acb8a2b019e48c625e0d55a8ec07b8873d36561909eb99e3e314158a8709544ec96da9353de44d77a2f4b150e08e97e2884363cae29e987347bfe76d3d9",
+    "role": "user",
+    "banned": false,
+    "active": true
+  },
+  "iii": {
+    "password": "scrypt:32768:8:1$S5c4jTc0nQ5mI9dr$c5804beaa74b4be380fdc312410ec42695e8987b9b46663d9b68081a678e82590132bf9b5319465509ad464e2c4ff263dc38a0fe25e60103f7a7a195b1f3d072",
+    "role": "user",
+    "active": true
+  },
+  "ardaaa": {
+    "password": "scrypt:32768:8:1$J8squ6xk4Nzyg09j$9938544032640850a0dbb3463c0a2b5de57cf3b880417d30472a436eb50d4f348af3feb8b59680cf5e9700ca9940cfc094b95a248ccf3651dfa4015477644b51",
+    "role": "user",
+    "banned": false,
+    "active": true
+  },
+  "ferbod1234": {
+    "password": "scrypt:32768:8:1$gtVqmSM9au0Lqnxt$596b17babfa6a4ea9207defd501110189a680d8dfede72d0a5bd13ae654d0b695e9809185fb47900448738ea25e003978ff6492de3a9ad6f268e7556fc7fb7a7",
+    "role": "admin",
+    "banned": false,
+    "active": true
+  },
+  "qarda": {
+    "password": "scrypt:32768:8:1$WENZDjfI1CQ8IVL9$9e51c45fc12910621e3ce9a07df89e02661c1826f93dc8461dd90b78948bb81514d139d4aa90661e0d760d8c5b35560fd5637b58bf9bc4f94682114ef57b2364",
+    "email": "1903quaresmarda1903@gmail.com",
+    "role": "admin",
+    "active": false,
+    "banned": false,
+    "created_at": "21.12.2025 17:02",
+    "avatar": "be9a53cfccce447d95e645f963044f22.jpg"
+  },
+  "fffffff": {
+    "password": "scrypt:32768:8:1$rZyt0XiX5cpJ3abW$cab6a58189bb080f548960df607d6544b27f7af89540f3720d5540209bdae7ab4f6b76e0a4cad26cef5eb83e4798bef5d06ca391cddbe7719e048c17d14e4e07",
+    "email": "fffff@gmail.com",
+    "role": "user",
+    "active": true,
+    "banned": false,
+    "created_at": "21.12.2025 17:30"
+  },
+  "1": {
+    "password": "scrypt:32768:8:1$AY1RvZfL40Fagjub$a87356048661fffe30a59acc904123b445563abee2d4773bd89e214cfd7af210582b7ceb8bf8b85e3539977d911d9cc167aa98f9569347db8f1f0140ce5fca4a",
+    "email": "ferbod279@gmail.com",
+    "role": "user",
+    "active": true,
+    "banned": false,
+    "created_at": "21.12.2025 17:31"
+  },
+  "ii": {
+    "password": "scrypt:32768:8:1$l8I5lOVzmf1g4g6N$0764f8285d7c272d483d6d5a113f411b80f14260bfc15e6c75a314769712c720a0fab878703f105b884babadd7469bb38e3feeb7f2ea6e01a57054b01b8ab2fd",
+    "role": "user",
+    "banned": false,
+    "active": true,
+    "created_at": "21.12.2025 18:20",
+    "avatar": null
+  },
+  "mustafa": {
+    "password": "scrypt:32768:8:1$7TFSnCI88Jr2eeNO$0ae7662f480b5c45f33e436f1b329fbb19acfe167145862851d05eb4f5eb248d770ae2d4b44923adff9165febb8d264a036e014597e3958dc7cb797cc09fbfe8",
+    "role": "user",
+    "banned": false,
+    "active": true,
+    "created_at": "21.12.2025 19:00",
+    "avatar": null
+  },
+  "emr": {
+    "password": "scrypt:32768:8:1$vNtzYVgU6LJEv1LQ$5276c9df5e4fc61f712be46eb4eb829fbe57060269f9c59ff8e51723400263a9c92edc08e1e559a3ec815daf5f43369567a55cca164274c00455d899ebebb5b8",
+    "role": "user",
+    "banned": false,
+    "active": true,
+    "created_at": "24.12.2025 18:37",
+    "avatar": null
+  },
+  "arda83": {
+    "password": "scrypt:32768:8:1$unP8VE7Hu3xELuw5$31cf98038e072e3ea9e1a5da454516af821d6aec23c1f693212b8db35507daab74ae551eb9ede534fc1f46df9d52b4cac40ed4a07f3072726d51687f3d18555e",
+    "role": "user",
+    "banned": false,
+    "active": true,
+    "created_at": "24.12.2025 21:27",
+    "avatar": null
+  }
+}

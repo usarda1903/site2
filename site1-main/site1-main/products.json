@@ -1,0 +1,127 @@
+{
+  "1": {
+    "id": "1",
+    "name": "Mystical Spell Book",
+    "price": 49.99,
+    "category": "books",
+    "emoji": "📖",
+    "description": "2000 yıl öncesinen büyüler",
+    "yorumlar": [
+      "Mükemmel bir kitap",
+      "Ben okuyamadım",
+      "Bu kitabı aldım ve bütün hayatım değişti"
+    ]
+  },
+  "2": {
+    "id": "2",
+    "name": "Carnivorous Plant",
+    "price": 29.99,
+    "category": "plants",
+    "emoji": "🌿"
+  },
+  "3": {
+    "id": "3",
+    "name": "Ancient Grimoire",
+    "price": 79.99,
+    "category": "books",
+    "emoji": "📚"
+  },
+  "4": {
+    "id": "4",
+    "name": "Enchanted Succulent",
+    "price": 19.99,
+    "category": "plants",
+    "emoji": "🪴"
+  },
+  "5": {
+    "id": "5",
+    "name": "Potion Making Kit",
+    "price": 59.99,
+    "category": "accessories",
+    "emoji": "🧪"
+  },
+  "6": {
+    "id": "6",
+    "name": "Crystal Ball",
+    "price": 89.99,
+    "category": "accessories",
+    "emoji": "🔮"
+  },
+  "7": {
+    "id": "7",
+    "name": "Magic Wand",
+    "price": 39.99,
+    "category": "accessories",
+    "emoji": "🪄"
+  },
+  "8": {
+    "id": "8",
+    "name": "Venus Flytrap",
+    "price": 24.99,
+    "category": "plants",
+    "emoji": "🌺"
+  },
+  "9": {
+    "id": "9",
+    "name": "Görünmezlik İksiri",
+    "price": 99.99,
+    "category": "potions",
+    "emoji": "⚗️"
+  },
+  "10": {
+    "id": "10",
+    "name": "Ayışığı Tozu",
+    "price": 4.99,
+    "category": "potions",
+    "emoji": "🌙"
+  },
+  "11": {
+    "id": "11",
+    "name": "Ejderha Yumurtası",
+    "price": 149.99,
+    "category": "pets",
+    "emoji": "🐲"
+  },
+  "12": {
+    "id": "12",
+    "name": "Sihirli Elf Şapkası",
+    "price": 109.99,
+    "category": "accessories",
+    "emoji": "🧑‍🎄"
+  },
+  "13": {
+    "id": "13",
+    "name": "Ateş Kılıcı",
+    "price": 190.0,
+    "category": "silah",
+    "emoji": "🔥"
+  },
+  "14": {
+    "id": "14",
+    "name": "5x Hız",
+    "price": 199.99,
+    "category": "ozel guc",
+    "emoji": "⚡"
+  },
+  "15": {
+    "id": "15",
+    "name": "Büyü Bombası",
+    "price": 399.99,
+    "category": "silah",
+    "emoji": "💣"
+  },
+  "16": {
+    "id": "16",
+    "name": "Kalkan",
+    "price": 12.99,
+    "category": "koruma",
+    "emoji": "🛡️"
+  },
+  "17": {
+    "id": "17",
+    "name": "Harita",
+    "price": 119.99,
+    "category": "accessories",
+    "emoji": "🗺️"
+  }
+}

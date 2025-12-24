@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Sepetim | Premium Store</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --glass-bg: rgba(255, 255, 255, 0.05);
+            --glass-border: rgba(255, 255, 255, 0.12);
+            --accent-purple: #6366f1;
+            --accent-pink: #a855f7;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --discount-green: #4ade80;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: radial-gradient(circle at top right, #1e1b4b, #0f172a);
+            color: var(--text-main);
+            min-height: 100vh;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            font-weight: 300;
+            letter-spacing: 2px;
+            margin-bottom: 40px;
+            text-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+
+        .cart-container {
+            width: 100%;
+            max-width: 900px;
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 24px;
+            padding: 30px;
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            text-align: left;
+            padding: 16px;
+            color: #c7d2fe;
+            font-weight: 600;
+            border-bottom: 1px solid var(--glass-border);
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+        }
+
+        td {
+            padding: 20px 16px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .item-name {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .discount-badge {
+            font-size: 0.7rem;
+            background: rgba(74, 222, 128, 0.15);
+            color: var(--discount-green);
+            padding: 2px 8px;
+            border-radius: 6px;
+            width: fit-content;
+            border: 1px solid rgba(74, 222, 128, 0.2);
+        }
+
+        .old-price {
+            text-decoration: line-through;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            margin-right: 8px;
+        }
+
+        .current-price {
+            color: var(--discount-green);
+            font-weight: 600;
+        }
+
+        .total {
+            text-align: right;
+            font-size: 1.5rem;
+            margin: 30px 0;
+            font-weight: 600;
+            color: #facc15;
+            text-shadow: 0 0 15px rgba(250, 204, 21, 0.3);
+        }
+
+        .actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .action-group {
+            display: flex;
+            gap: 12px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 24px;
+            border-radius: 14px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255,255,255,0.1);
+            cursor: pointer;
+            color: white;
+        }
+
+        .btn-back { background: rgba(255, 255, 255, 0.05); }
+        .btn-clear { background: rgba(239, 68, 68, 0.1); color: #f87171; border-color: rgba(239, 68, 68, 0.2); }
+        .btn-buy { 
+            background: linear-gradient(135deg, var(--accent-purple), var(--accent-pink));
+            border: none;
+            padding: 12px 40px;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            filter: brightness(1.1);
+        }
+
+        .remove {
+            color: #f87171;
+            text-decoration: none;
+            font-size: 1.4rem;
+            transition: 0.2s;
+        }
+
+        .empty {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .empty p { color: var(--text-muted); font-size: 1.2rem; margin-bottom: 25px; }
+    </style>
+</head>
+<body>
+
+<h1>🛒 Sepetim</h1>
+
+<div class="cart-container">
+
+    {% if cart_items %}
+    <table>
+        <thead>
+            <tr>
+                <th>Ürün</th>
+                <th>Adet</th>
+                <th>Birim Fiyat</th>
+                <th>Toplam</th>
+                <th style="width: 50px;"></th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in cart_items %}
+            <tr>
+                <td>
+                    <div class="item-name">
+                        <span>{{ item.name }}</span>
+                        {% if item.is_discounted %}
+                        <span class="discount-badge">-%{{ item.discount_rate }} İndirim</span>
+                        {% endif %}
+                    </div>
+                </td>
+                <td>{{ item.quantity }}</td>
+                <td>
+                    {% if item.is_discounted %}
+                        <span class="old-price">{{ "%.2f"|format(item.old_price) }} 🪙</span>
+                        <span class="current-price">{{ "%.2f"|format(item.price) }} 🪙</span>
+                    {% else %}
+                        <span>{{ "%.2f"|format(item.price) }} 🪙</span>
+                    {% endif %}
+                </td>
+                <td>
+                    <strong style="color: #facc15;">{{ "%.2f"|format(item.total) }} 🪙</strong>
+                </td>
+                <td>
+                    <a href="/remove_from_cart/{{ item.id }}" class="remove" title="Sil">×</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <div class="total">
+        Genel Toplam: {{ "%.2f"|format(total_price) }} 🪙
+    </div>
+
+    <div class="actions">
+        <a href="/magaza" class="btn btn-back">← Alışverişe Devam</a>
+        
+        <div class="action-group">
+            <a href="/clear_cart" class="btn btn-clear">🗑 Temizle</a>
+            
+            <form action="/checkout" method="POST">
+                <button type="submit" class="btn btn-buy">
+                    ✨ Ödemeye Geç
+                </button>
+            </form>
+        </div>
+    </div>
+
+    {% else %}
+    <div class="empty">
+        <p>Sepetin şu an bomboş 😔</p>
+        <a href="/magaza" class="btn btn-buy">Hemen Alışverişe Başla</a>
+    </div>
+    {% endif %}
+
+</div>
+
+</body>
+</html>

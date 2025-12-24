@@ -1,0 +1,252 @@
+[
+  {
+    "id": 1,
+    "question": "Türkiye Cumhuriyeti hangi yılda kurulmuştur?",
+    "options": ["1918", "1920", "1923", "1938"],
+    "answer": "1923"
+  },
+  {
+    "id": 2,
+    "question": "Bir üçgenin iç açıları toplamı kaç derecedir?",
+    "options": ["90", "180", "270", "360"],
+    "answer": "180"
+  },
+  {
+    "id": 3,
+    "question": "Dünyanın en büyük okyanusu hangisidir?",
+    "options": ["Atlas", "Hint", "Pasifik", "Arktik"],
+    "answer": "Pasifik"
+  },
+  {
+    "id": 4,
+    "question": "Python hangi tür bir programlama dilidir?",
+    "options": ["Makine", "Yorumlanan", "Assembly", "Donanım"],
+    "answer": "Yorumlanan"
+  },
+  {
+    "id": 5,
+    "question": "İstanbul kaç kıtada yer alır?",
+    "options": ["1", "2", "3", "4"],
+    "answer": "2"
+  },
+  {
+    "id": 6,
+    "question": "İnsan vücudundaki en büyük organ hangisidir?",
+    "options": ["Kalp", "Beyin", "Deri", "Karaciğer"],
+    "answer": "Deri"
+  },
+  {
+    "id": 7,
+    "question": "Bir saatte kaç dakika vardır?",
+    "options": ["30", "45", "60", "90"],
+    "answer": "60"
+  },
+  {
+    "id": 8,
+    "question": "HTML ne için kullanılır?",
+    "options": ["Veritabanı", "Web tasarım", "Oyun motoru", "İşletim sistemi"],
+    "answer": "Web tasarım"
+  },
+  {
+    "id": 9,
+    "question": "Güneş sistemindeki en büyük gezegen hangisidir?",
+    "options": ["Mars", "Dünya", "Satürn", "Jüpiter"],
+    "answer": "Jüpiter"
+  },
+  {
+    "id": 10,
+    "question": "Bir haftada kaç gün vardır?",
+    "options": ["5", "6", "7", "8"],
+    "answer": "7"
+  },
+  {
+    "id": 11,
+    "question": "Fransa'nın başkenti neresidir?",
+    "options": ["Roma", "Berlin", "Paris", "Madrid"],
+    "answer": "Paris"
+  },
+  {
+    "id": 12,
+    "question": "Su kaç derecede donar?",
+    "options": ["0", "10", "50", "100"],
+    "answer": "0"
+  },
+  {
+    "id": 13,
+    "question": "CSS ne için kullanılır?",
+    "options": ["Sunucu", "Stil", "Veritabanı", "API"],
+    "answer": "Stil"
+  },
+  {
+    "id": 14,
+    "question": "Dünyanın uydusu hangisidir?",
+    "options": ["Mars", "Ay", "Güneş", "Venüs"],
+    "answer": "Ay"
+  },
+  {
+    "id": 15,
+    "question": "1 kilometre kaç metredir?",
+    "options": ["100", "500", "1000", "1500"],
+    "answer": "1000"
+  },
+  {
+    "id": 16,
+    "question": "En küçük asal sayı hangisidir?",
+    "options": ["0", "1", "2", "3"],
+    "answer": "2"
+  },
+  {
+    "id": 17,
+    "question": "Elektriği bulan bilim insanı olarak bilinen kişi kimdir?",
+    "options": ["Newton", "Einstein", "Tesla", "Galileo"],
+    "answer": "Tesla"
+  },
+  {
+    "id": 18,
+    "question": "Bir yıl kaç aydır?",
+    "options": ["10", "11", "12", "13"],
+    "answer": "12"
+  },
+  {
+    "id": 19,
+    "question": "İnsan vücudunda kaç kalp vardır?",
+    "options": ["1", "2", "3", "4"],
+    "answer": "1"
+  },
+  {
+    "id": 20,
+    "question": "Bilgisayarın beyni olarak adlandırılan parça hangisidir?",
+    "options": ["RAM", "CPU", "SSD", "GPU"],
+    "answer": "CPU"
+  },
+
+  
+  {
+    "id": 21,
+    "question": "Işık hızı yaklaşık kaç km/s'dir?",
+    "options": ["30.000", "150.000", "300.000", "1.000.000"],
+    "answer": "300.000"
+  },
+  {
+    "id": 22,
+    "question": "Osmanlı Devleti hangi yılda kurulmuştur?",
+    "options": ["1071", "1299", "1453", "1517"],
+    "answer": "1299"
+  },
+  {
+    "id": 23,
+    "question": "Bir dakikada kaç saniye vardır?",
+    "options": ["30", "45", "60", "90"],
+    "answer": "60"
+  },
+  {
+    "id": 24,
+    "question": "Dünyanın en uzun nehri hangisidir?",
+    "options": ["Amazon", "Nil", "Fırat", "Mississippi"],
+    "answer": "Nil"
+  },
+  {
+    "id": 25,
+    "question": "2 üzeri 5 kaçtır?",
+    "options": ["16", "24", "32", "64"],
+    "answer": "32"
+  },
+  {
+    "id": 26,
+    "question": "Türkiye'nin para birimi nedir?",
+    "options": ["Euro", "Dolar", "Lira", "Sterlin"],
+    "answer": "Lira"
+  },
+  {
+    "id": 27,
+    "question": "İnsan vücudunda kaç akciğer vardır?",
+    "options": ["1", "2", "3", "4"],
+    "answer": "2"
+  },
+  {
+    "id": 28,
+    "question": "Bilgisayarda RAM ne işe yarar?",
+    "options": ["Depolama", "Geçici bellek", "İşlemci", "Ekran"],
+    "answer": "Geçici bellek"
+  },
+  {
+    "id": 29,
+    "question": "En soğuk gezegen hangisidir?",
+    "options": ["Mars", "Neptün", "Uranüs", "Satürn"],
+    "answer": "Uranüs"
+  },
+  {
+    "id": 30,
+    "question": "Bir yıl kaç haftadır (yaklaşık)?",
+    "options": ["48", "50", "52", "54"],
+    "answer": "52"
+  },
+  {
+    "id": 31,
+    "question": "Elektrik devresinde ölçüm yapan alet hangisidir?",
+    "options": ["Termometre", "Voltmetre", "Barometre", "Higrometre"],
+    "answer": "Voltmetre"
+  },
+  {
+    "id": 32,
+    "question": "Dünyanın şekli hangisine daha yakındır?",
+    "options": ["Küre", "Düz", "Küp", "Üçgen"],
+    "answer": "Küre"
+  },
+  {
+    "id": 33,
+    "question": "Bir futbol maçında bir takım kaç oyuncuyla sahaya çıkar?",
+    "options": ["9", "10", "11", "12"],
+    "answer": "11"
+  },
+  {
+    "id": 34,
+    "question": "İnternette veri iletimi hangi protokol ile yapılır?",
+    "options": ["HTML", "HTTP", "CSS", "SQL"],
+    "answer": "HTTP"
+  },
+  {
+    "id": 35,
+    "question": "İnsan vücudundaki kemik sayısı kaçtır?",
+    "options": ["180", "200", "206", "220"],
+    "answer": "206"
+  },
+  {
+    "id": 36,
+    "question": "Bir dikdörtgenin alanı nasıl hesaplanır?",
+    "options": [
+      "Kısa kenar + uzun kenar",
+      "Kısa kenar x uzun kenar",
+      "2 x (kenarlar)",
+      "Kenar²"
+    ],
+    "answer": "Kısa kenar x uzun kenar"
+  },
+  {
+    "id": 37,
+    "question": "Güneş hangi gazdan büyük oranda oluşur?",
+    "options": ["Oksijen", "Helyum", "Hidrojen", "Azot"],
+    "answer": "Hidrojen"
+  },
+  {
+    "id": 38,
+    "question": "İlk bilgisayar hangi amaçla geliştirilmiştir?",
+    "options": ["Oyun", "Hesaplama", "İnternet", "Tasarım"],
+    "answer": "Hesaplama"
+  },
+  {
+    "id": 39,
+    "question": "Bir gün kaç saattir?",
+    "options": ["12", "18", "24", "36"],
+    "answer": "24"
+  },
+  {
+    "id": 40,
+    "question": "Python'da liste veri tipi hangisidir?",
+    "options": ["{}", "()", "[]", "<>"],
+    "answer": "[]"
+  }
+]
+
+
+

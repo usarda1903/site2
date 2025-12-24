@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destek Paneli - Mystical Glass</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #818cf8;
+            --secondary: #c084fc;
+            --accent: #fbbf24;
+            --glass: rgba(255, 255, 255, 0.03);
+            --glass-heavy: rgba(255, 255, 255, 0.07);
+            --glass-border: rgba(255, 255, 255, 0.12);
+            --text-main: #f1f5f9;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            /* Mistik Derinlik için Gelişmiş Gradyan */
+            background: 
+                radial-gradient(circle at 20% 20%, rgba(99, 102, 241, 0.15) 0%, transparent 40%),
+                radial-gradient(circle at 80% 80%, rgba(168, 85, 247, 0.15) 0%, transparent 40%),
+                #070a13;
+            background-attachment: fixed;
+            min-height: 100vh;
+            color: var(--text-main);
+            padding: 40px 20px;
+        }
+
+        .container { max-width: 850px; margin: 0 auto; }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            text-align: center;
+            background: linear-gradient(135deg, #fff 30%, var(--primary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 50px;
+            filter: drop-shadow(0 0 15px rgba(129, 140, 248, 0.3));
+        }
+
+        /* Ana Cam Panel */
+        .user-box {
+            background: var(--glass);
+            backdrop-filter: blur(25px) saturate(180%);
+            -webkit-backdrop-filter: blur(25px) saturate(180%);
+            border: 1px solid var(--glass-border);
+            border-radius: 32px;
+            padding: 30px;
+            margin-bottom: 50px;
+            box-shadow: 
+                0 25px 50px -12px rgba(0, 0, 0, 0.5),
+                inset 0 1px 1px rgba(255, 255, 255, 0.1);
+        }
+
+        .user-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .user-header h2 {
+            font-size: 1.5rem;
+            color: #fff;
+            text-shadow: 0 0 10px rgba(255,255,255,0.2);
+        }
+
+        /* Mesaj Balonları - Ultra Glass */
+        .chat-container {
+            max-height: 450px;
+            overflow-y: auto;
+            padding-right: 15px;
+            margin-bottom: 25px;
+        }
+
+        .message {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            padding: 15px 20px;
+            border-radius: 20px;
+            border-bottom-left-radius: 4px;
+            margin-bottom: 20px;
+            width: fit-content;
+            max-width: 85%;
+            position: relative;
+        }
+
+        .time {
+            font-size: 0.65rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--primary);
+            margin-bottom: 6px;
+            font-weight: 600;
+        }
+
+        .message p { font-size: 1rem; line-height: 1.5; opacity: 0.9; }
+
+        /* Yanıt Alanı */
+        .reply-form {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--glass-border);
+            padding: 8px 8px 8px 20px;
+            border-radius: 20px;
+            transition: 0.4s;
+        }
+
+        .reply-form:focus-within {
+            background: rgba(255, 255, 255, 0.06);
+            border-color: var(--primary);
+            box-shadow: 0 0 20px rgba(99, 102, 241, 0.2);
+        }
+
+        input[type="text"] {
+            flex: 1;
+            background: transparent;
+            border: none;
+            color: #fff;
+            height: 45px;
+            font-size: 1rem;
+            outline: none;
+        }
+
+        button {
+            background: #fff;
+            color: #000;
+            border: none;
+            padding: 12px 28px;
+            border-radius: 16px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(255,255,255,0.4);
+        }
+
+        /* Kaydırma Çubuğu */
+        .chat-container::-webkit-scrollbar { width: 5px; }
+        .chat-container::-webkit-scrollbar-thumb {
+            background: var(--glass-border);
+            border-radius: 10px;
+        }
+
+        .back-nav a {
+            color: rgba(255,255,255,0.5);
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: 0.3s;
+        }
+        .back-nav a:hover { color: var(--primary); }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="back-nav">
+        <a href="/magaza">← MYSTICAL SHOP</a>
+    </div>
+
+    <h1>Destek Yönetimi</h1>
+
+    {% if support %}
+        {% for user, messages in support.items() %}
+            <div class="user-box">
+                <div class="user-header">
+                    <div style="width: 12px; height: 12px; background: #22c55e; border-radius: 50%; box-shadow: 0 0 10px #22c55e;"></div>
+                    <h2>{{ user }}</h2>
+                </div>
+
+                <div class="chat-container">
+                    {% for m in messages %}
+                        <div class="message">
+                            <div class="time">{{ m.time }}</div>
+                            <p>{{ m.text }}</p>
+                        </div>
+                    {% endfor %}
+                </div>
+
+                <form class="reply-form" method="POST">
+                    <input type="hidden" name="user" value="{{ user }}">
+                    <input type="text" name="cevap" placeholder="Bir mesaj yazın..." required autocomplete="off">
+                    <button type="submit">GÖNDER</button>
+                </form>
+            </div>
+        {% endfor %}
+    {% else %}
+        <div class="user-box" style="text-align: center; border-style: dashed; opacity: 0.6;">
+            <p>Şu an ruhlar sessiz... (Talep yok)</p>
+        </div>
+    {% endif %}
+</div>
+
+</body>
+</html>

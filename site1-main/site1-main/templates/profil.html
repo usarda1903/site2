@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Profil</title>
+    <style>
+        /* Genel Ayarlar */
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background: #0f172a;
+            color: #f8fafc;
+            padding: 40px;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        /* Kart Tasarımı */
+        .card {
+            width: 100%;
+            max-width: 450px;
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 1.5rem;
+            margin-top: 10px;
+            margin-bottom: 25px;
+        }
+
+        /* Avatar Alanı */
+        .avatar-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .avatar-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #6366f1;
+            padding: 3px;
+            background: #1e293b;
+        }
+
+        /* Form ve Input Tasarımları */
+        .upload-form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        input[type="file"] {
+            font-size: 0.8rem;
+            color: #94a3b8;
+        }
+
+        input[type="file"]::file-selector-button {
+            background: #334155;
+            color: white;
+            padding: 6px 12px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-right: 10px;
+            transition: 0.3s;
+        }
+
+        input[type="file"]::file-selector-button:hover {
+            background: #475569;
+        }
+
+        button {
+            background: #6366f1;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 10px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background: #4f46e5;
+            transform: translateY(-1px);
+        }
+
+        /* Bilgi Satırları */
+        .item {
+            margin: 15px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.95rem;
+            color: #cbd5e1;
+        }
+
+        /* Rozetler */
+        .badge {
+            padding: 4px 12px;
+            border-radius: 99px;
+            font-size: 0.75rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .admin { background: #6366f1; color: white; }
+        .user { background: #334155; color: #f8fafc; }
+        .ban { background: #ef4444; color: white; }
+        .active { background: #10b981; color: white; }
+
+        /* Linkler */
+        .back-link {
+            text-decoration: none;
+            color: #94a3b8;
+            font-size: 0.85rem;
+            transition: color 0.2s;
+        }
+
+        .back-link:hover {
+            color: #f8fafc;
+        }
+
+        .logout-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            color: #ef4444;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 10px;
+            border: 1px solid rgba(239, 68, 68, 0.2);
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .logout-link:hover {
+            background: rgba(239, 68, 68, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <a href="/magaza" class="back-link">← Mağazaya Geri Dön</a>
+    
+    <h1>👤 {{ username }}</h1>
+
+    <div class="avatar-container">
+        {% if avatar %}
+            <img src="{{ url_for('static', filename='uploads/avatars/' + avatar) }}" class="avatar-img">
+        {% else %}
+            <img src="{{ url_for('static', filename='default_avatar.png') }}" class="avatar-img">
+        {% endif %}
+    </div>
+
+    <form action="/profil/avatar" method="POST" enctype="multipart/form-data" class="upload-form">
+        <input type="file" name="avatar" accept="image/*" required>
+        <button type="submit">Fotoğrafı Güncelle</button>
+    </form>
+
+    <div class="item">
+        <span>Yetki Rolü:</span>
+        <span class="badge {{ role }}">{{ role }}</span>
+    </div>
+
+    <div class="item">
+        <span>Hesap Durumu:</span>
+        {% if banned %}
+            <span class="badge ban">Banlı</span>
+        {% elif not active %}
+            <span class="badge ban">Pasif</span>
+        {% else %}
+            <span class="badge active">Aktif</span>
+        {% endif %}
+    </div>
+
+    <div class="item">
+        <span>Kayıt Tarihi:</span>
+        <span style="color: #f8fafc;">{{ created_at }}</span>
+    </div>
+
+    <div class="item">
+        <span>Satın Alma:</span>
+        <span style="color: #f8fafc;">{{ purchase_count }} Adet</span>
+    </div>
+
+    <div class="item">
+        <span>Destek Talebi:</span>
+        <span style="color: #f8fafc;">{{ support_count }} Mesaj</span>
+    </div>
+
+    <a href="/logout" class="logout-link">🚪 Oturumu Kapat</a>
+</div>
+
+</body>
+</html>

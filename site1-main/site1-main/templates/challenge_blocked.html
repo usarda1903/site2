@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erişim Sınırı</title>
+    <style>
+        /* Modern Font */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+        body {
+            background: radial-gradient(circle at center, #1e1b4b, #0f172a, #020617);
+            background-attachment: fixed;
+            color: #e2e8f0;
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+
+        /* Uyarı Kartı */
+        .limit-card {
+            background: rgba(30, 41, 59, 0.4);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 50px 30px;
+            border-radius: 32px;
+            max-width: 400px;
+            width: 90%;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+            animation: pulse 4s infinite ease-in-out;
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 0 20px rgba(99, 102, 241, 0.1); }
+            50% { box-shadow: 0 0 40px rgba(99, 102, 241, 0.2); }
+            100% { box-shadow: 0 0 20px rgba(99, 102, 241, 0.1); }
+        }
+
+        /* İkon Efekti */
+        .icon-circle {
+            width: 80px;
+            height: 80px;
+            background: rgba(239, 68, 68, 0.1);
+            border: 2px solid rgba(239, 68, 68, 0.3);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 25px;
+            font-size: 40px;
+            color: #ef4444;
+            text-shadow: 0 0 10px rgba(239, 68, 68, 0.5);
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: #f8fafc;
+            letter-spacing: -0.5px;
+        }
+
+        p {
+            color: #94a3b8;
+            font-size: 1.1rem;
+            margin-bottom: 35px;
+            line-height: 1.6;
+        }
+
+        /* Link Tasarımı */
+        .btn-secondary {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            color: #a5b4fc;
+            background: rgba(165, 180, 252, 0.05);
+            padding: 12px 24px;
+            border-radius: 12px;
+            border: 1px solid rgba(165, 180, 252, 0.2);
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+
+        .btn-secondary:hover {
+            background: rgba(165, 180, 252, 0.15);
+            border-color: #818cf8;
+            color: #fff;
+            transform: translateY(-2px);
+        }
+
+        /* Alt Süsleme (Opsiyonel) */
+        .timer-info {
+            margin-top: 25px;
+            font-size: 0.85rem;
+            color: #475569;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="limit-card">
+        <div class="icon-circle">⛔</div>
+        
+        <h1>Bugün Zaten Oynadın</h1>
+        
+        <p>Görünüşe göre bu günkü enerjini tükettin. Yarın şansını tekrar denemek için mistik güçler geri dönecek.</p>
+
+        <a href="/challenge/leaderboard" class="btn-secondary">
+            🏆 Liderlik Tablosuna Göz At
+        </a>
+
+        <div class="timer-info">
+    Sıfırlanmaya Kalan:
+    {{ hours }} saat
+    {{ minutes }} dakika
+    {{ seconds }} saniye
+</div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ product.name }} - Mystical Shop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #6366f1;
+            --secondary: #a855f7;
+            --accent: #f59e0b;
+            --glass: rgba(255, 255, 255, 0.05);
+            --glass-border: rgba(255, 255, 255, 0.12);
+            --text-muted: #94a3b8;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background: radial-gradient(circle at top right, #1e1b4b, #070a13);
+            background-attachment: fixed;
+            color: #f8fafc;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container { max-width: 1200px; margin: 0 auto; }
+
+        .back-nav { margin-bottom: 25px; }
+        .back-nav a { 
+            color: var(--text-muted); 
+            text-decoration: none; 
+            font-weight: 600; 
+            transition: 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .back-nav a:hover { color: var(--primary); }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 50px;
+            align-items: start;
+        }
+
+        .image-sticky-wrapper {
+            position: sticky;
+            top: 40px;
+        }
+
+        .image-card {
+            background: var(--glass);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: 32px;
+            padding: 15px;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .product-img {
+            width: 100%;
+            height: 550px;
+            object-fit: cover;
+            border-radius: 20px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+        }
+
+        .emoji-placeholder {
+            font-size: 10rem;
+            height: 550px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255,255,255,0.02);
+            border-radius: 20px;
+        }
+
+        .details-card {
+            background: var(--glass);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: 32px;
+            padding: 45px;
+        }
+
+        .category-badge {
+            color: var(--primary);
+            font-weight: 800;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 2px;
+            margin-bottom: 12px;
+            display: block;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 15px;
+            line-height: 1.1;
+            background: linear-gradient(135deg, #fff 0%, var(--primary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .seller-line {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--glass-border);
+        }
+
+        .description {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #cbd5e1;
+            margin-bottom: 40px;
+        }
+
+        .specs-container {
+            margin-bottom: 40px;
+        }
+
+        .specs-container h3 {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            color: #ffe0b2;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .spec-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 14px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .spec-label { color: var(--text-muted); font-weight: 500; }
+        .spec-value { color: #f8fafc; font-weight: 600; }
+
+        .buy-box {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid var(--glass-border);
+            border-radius: 24px;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .price-text {
+            font-size: 3.5rem;
+            font-weight: 800;
+            color: var(--accent);
+            margin-bottom: 20px;
+            text-shadow: 0 0 20px rgba(245, 158, 11, 0.3);
+        }
+
+        .btn-purchase {
+            display: block;
+            width: 100%;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 22px;
+            border-radius: 18px;
+            font-weight: 800;
+            font-size: 1.4rem;
+            text-decoration: none;
+            transition: 0.4s;
+            box-shadow: 0 10px 30px rgba(99, 102, 241, 0.4);
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-purchase:hover {
+            transform: translateY(-5px) scale(1.02);
+            filter: brightness(1.1);
+            box-shadow: 0 15px 40px rgba(99, 102, 241, 0.5);
+        }
+
+        .admin-controls {
+            margin-top: 20px;
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .btn-delete {
+            color: #ef4444;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 600;
+            padding: 8px 16px;
+            border: 1px solid rgba(239, 68, 68, 0.2);
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .btn-delete:hover {
+            background: rgba(239, 68, 68, 0.1);
+        }
+
+        @media (max-width: 968px) {
+            .product-grid { grid-template-columns: 1fr; }
+            .image-sticky-wrapper { position: relative; top: 0; }
+            .product-img, .emoji-placeholder { height: 400px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="back-nav">
+        <a href="{{ url_for('magaza') }}">← Büyülü Koleksiyona Dön</a>
+    </div>
+
+    <div class="product-grid">
+        <div class="image-sticky-wrapper">
+            <div class="image-card">
+                {% if product.image %}
+                    <img src="{{ url_for('static', filename='uploads/products/' + product.image) }}" class="product-img" alt="{{ product.name }}">
+                {% else %}
+                    <div class="emoji-placeholder">{{ product.emoji }}</div>
+                {% endif %}
+            </div>
+        
+        </div>
+
+        <div class="details-card">
+            <span class="category-badge">{{ product.category }}</span>
+            <h1>{{ product.name }}</h1>
+            
+            <div class="seller-line">
+                👤 Satıcı: <strong>{{ mask_username(product.seller) }}</strong> 
+                <span style="margin-left: 15px; opacity: 0.5;">📅 {{ product.date_added }}</span>
+            </div>
+
+            <div class="description">
+                {{ product.description or "Bu kadim eşyanın hikayesi henüz yazılmamış olsa da, taşıdığı enerji paha biçilemez." }}
+            </div>
+
+            <div class="specs-container">
+                <h3>📜 Mistik Özellikler</h3>
+                
+                {% if product.features %}
+                    {% for key, value in product.features.items() %}
+                        <div class="spec-row">
+                            <span class="spec-label">{{ key }}</span>
+                            <span class="spec-value">{{ value }}</span>
+                        </div>
+                    {% endfor %}
+                {% else %}
+                    <div class="spec-row"><span class="spec-label">Nadirlik</span><span class="spec-value">Efsanevi</span></div>
+                    <div class="spec-row"><span class="spec-label">Güç Türü</span><span class="spec-value">Mistik Enerji</span></div>
+                    <div class="spec-row"><span class="spec-label">Durum</span><span class="spec-value">Kadim</span></div>
+                {% endif %}
+            </div>
+
+            <div class="buy-box">
+                <div style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 5px;">Mevcut Değer</div>
+                {% if product.has_discount %}
+    <div style="font-size: 1rem; color: #94a3b8; text-decoration: line-through;">
+        {{ "%.2f"|format(product.old_price) }} 🪙
+    </div>
+
+    <div class="price-text">
+        {{ "%.2f"|format(product.price) }} 🪙
+    </div>
+
+    <div style="color:#10b981; font-weight:700; margin-top:5px;">
+        %{{ product.discount_rate }} İNDİRİM
+    </div>
+{% else %}
+    <div class="price-text">
+        {{ "%.2f"|format(product.price) }} 🪙
+    </div>
+{% endif %}
+
+                
+                <a href="{{ url_for('purchase', product_id=product.id) }}" class="btn-purchase">HEMEN SATIN AL</a>
+                
+                <div style="margin-top: 15px; font-size: 0.8rem; color: #64748b;">
+                    🚚 Ejderha Kurye ile anında teslimat!
+                </div>
+                <div style="margin-top: 10px;">
+                    <a href="{{ url_for('yorumlar', product_id=product.id) }}" style="color: var(--primary); text-decoration: none; font-size: 0.9rem; font-weight: 600;">
+                        💬 Yorumları Gör ve Yaz
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

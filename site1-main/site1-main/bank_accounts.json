@@ -1,0 +1,813 @@
+{
+  "1": {
+    "balance": 680.0699999999999,
+    "cards": [],
+    "transactions": [
+      {
+        "type": "purchase",
+        "amount": -79.99,
+        "date": "21.12.2025 17:32",
+        "description": "Ancient Grimoire satın alındı"
+      },
+      {
+        "type": "purchase",
+        "amount": -29.99,
+        "date": "21.12.2025 18:19",
+        "description": "Carnivorous Plant satın alındı"
+      },
+      {
+        "type": "purchase",
+        "amount": -29.99,
+        "date": "21.12.2025 18:19",
+        "description": "Carnivorous Plant satın alındı"
+      },
+      {
+        "type": "purchase",
+        "amount": -29.99,
+        "date": "21.12.2025 18:19",
+        "description": "Carnivorous Plant satın alındı"
+      },
+      {
+        "type": "purchase",
+        "amount": -29.99,
+        "date": "21.12.2025 18:19",
+        "description": "Carnivorous Plant satın alındı"
+      },
+      {
+        "type": "purchase",
+        "amount": -29.99,
+        "date": "21.12.2025 18:19",
+        "description": "Carnivorous Plant satın alındı"
+      },
+      {
+        "type": "purchase",
+        "amount": -89.99,
+        "date": "21.12.2025 18:19",
+        "description": "Crystal Ball satın alındı"
+      }
+    ]
+  },
+  "qarda": {
+    "balance": 5160.0599999999995,
+    "cards": [
+      {
+        "id": "06459a20-528f-4f79-8738-ade10d564ca6",
+        "number": "3332323242424442",
+        "holder": "ARDA AKINCIGİL",
+        "expiry": "12/25",
+        "cvv": "122",
+        "added_date": "21.12.2025 18:19"
+      }
+    ],
+    "transactions": [
+      {
+        "type": "deposit",
+        "amount": 800.0,
+        "date": "21.12.2025 18:18",
+        "description": "Para Yatırma"
+      },
+      {
+        "type": "purchase",
+        "amount": -29.99,
+        "date": "21.12.2025 18:20",
+        "description": "Carnivorous Plant satın alındı"
+      },
+      {
+        "type": "purchase",
+        "amount": -29.99,
+        "date": "21.12.2025 18:20",
+        "description": "Carnivorous Plant satın alındı"
+      },
+      {
+        "type": "purchase",
+        "amount": -49.99,
+        "date": "21.12.2025 18:25",
+        "description": "Mystical Spell Book satın alındı"
+      },
+      {
+        "type": "purchase",
+        "amount": -49.99,
+        "date": "21.12.2025 18:26",
+        "description": "Mystical Spell Book satın alındı"
+      },
+      {
+        "type": "deposit",
+        "amount": 200.0,
+        "date": "21.12.2025 18:49",
+        "description": "Para Yatırma"
+      },
+      {
+        "type": "purchase",
+        "amount": -49.99,
+        "date": "21.12.2025 18:51",
+        "description": "Mystical Spell Book satın alındı"
+      },
+      {
+        "type": "purchase",
+        "amount": -29.99,
+        "date": "21.12.2025 18:51",
+        "description": "Carnivorous Plant satın alındı"
+      },
+      {
+        "type": "deposit",
+        "amount": 200.0,
+        "date": "21.12.2025 18:58",
+        "description": "Para Yatırma"
+      },
+      {
+        "type": "deposit",
+        "amount": 3000.0,
+        "date": "21.12.2025 19:20",
+        "description": "Para Yatırma"
+      },
+      {
+        "type": "deposit",
+        "amount": 200.0,
+        "date": "21.12.2025 19:39",
+        "description": "Para Yatırma"
+      }
+    ]
+  },
+  "haha": {
+    "balance": 771.04,
+    "cards": [],
+    "transactions": [
+      {
+        "type": "purchase",
+        "amount": -29.99,
+        "date": "21.12.2025 18:20",
+        "description": "Carnivorous Plant satın alındı"
+      },
+      {
+        "type": "purchase",
+        "amount": -29.99,
+        "date": "21.12.2025 18:21",
+        "description": "Carnivorous Plant satın alındı"
+      },
+      {
+        "type": "purchase",
+        "amount": -79.99,
+        "date": "21.12.2025 18:27",
+        "description": "Ancient Grimoire satın alındı"
+      },
+      {
+        "type": "purchase",
+        "amount": -79.99,
+        "date": "21.12.2025 18:27",
+        "description": "Ancient Grimoire satın alındı"
+      },
+      {
+        "type": "purchase",
+        "amount": -79.99,
+        "date": "21.12.2025 18:27",
+        "description": "Ancient Grimoire satın alındı"
+      },
+      {
+        "type": "purchase",
+        "amount": -29.99,
+        "date": "21.12.2025 18:30",
+        "description": "Carnivorous Plant satın alındı"
+      },
+      {
+        "type": "purchase",
+        "amount": -29.99,
+        "date": "21.12.2025 18:30",
+        "description": "Carnivorous Plant satın alındı"
+      },
+      {
+        "type": "purchase",
+        "amount": -29.99,
+        "date": "21.12.2025 18:30",
+        "description": "Carnivorous Plant satın alındı"
+      },
+      {
+        "type": "purchase",
+        "amount": -49.99,
+        "date": "21.12.2025 18:40",
+        "description": "Mystical Spell Book satın alındı"
+      },
+      {
+        "type": "purchase",
+        "amount": -49.99,
+        "date": "21.12.2025 18:41",
+        "description": "Mystical Spell Book satın alındı"
+      },
+      {
+        "type": "purchase",
+        "amount": -49.99,
+        "date": "21.12.2025 18:41",
+        "description": "Mystical Spell Book satın alındı"
+      },
+      {
+        "type": "purchase",
+        "amount": -49.99,
+        "date": "21.12.2025 18:41",
+        "description": "Mystical Spell Book satın alındı"
+      },
+      {
+        "type": "purchase",
+        "amount": -49.99,
+        "date": "21.12.2025 18:41",
+        "description": "Mystical Spell Book satın alındı"
+      },
+      {
+        "type": "purchase",
+        "amount": -49.99,
+        "date": "21.12.2025 18:41",
+        "description": "Mystical Spell Book satın alındı"
+      },
+      {
+        "type": "purchase",
+        "amount": -49.99,
+        "date": "21.12.2025 18:41",
+        "description": "Mystical Spell Book satın alındı"
+      },
+      {
+        "type": "deposit",
+        "amount": 2.222222222222222e+26,
+        "date": "21.12.2025 18:49",
+        "description": "Para Yatırma"
+      },
+      {
+        "type": "deposit",
+        "amount": 5.0,
+        "date": "21.12.2025 18:49",
+        "description": "Para Yatırma"
+      },
+      {
+        "type": "deposit",
+        "amount": 2.0,
+        "date": "21.12.2025 18:55",
+        "description": "Para Yatırma"
+      },
+      {
+        "type": "deposit",
+        "amount": 2.0,
+        "date": "21.12.2025 18:55",
+        "description": "Para Yatırma"
+      },
+      {
+        "type": "deposit",
+        "amount": 1000.0,
+        "date": "21.12.2025 18:57",
+        "description": "Para Yatırma"
+      },
+      {
+        "type": "deposit",
+        "amount": 800.0,
+        "date": "21.12.2025 18:57",
+        "description": "Para Yatırma"
+      },
+      {
+        "type": "Alışveriş",
+        "amount": -94.97999999999999,
+        "date": "24.12.2025 20:01"
+      },
+      {
+        "type": "Alışveriş",
+        "amount": -39.99,
+        "date": "24.12.2025 20:06"
+      },
+      {
+        "type": "Alışveriş",
+        "amount": -999.99,
+        "date": "24.12.2025 20:50"
+      },
+      {
+        "type": "Alışveriş",
+        "amount": -34.5,
+        "date": "24.12.2025 20:53"
+      },
+      {
+        "type": "Alışveriş",
+        "amount": -59.5,
+        "date": "24.12.2025 20:59"
+      }
+    ]
+  },
+  "ii": {
+    "balance": 1000.0,
+    "cards": [],
+    "transactions": []
+  },
+  "eb1300806f90d9b7383b6e7837468a23": {
+    "balance": 0.0,
+    "cards": [],
+    "transactions": []
+  },
+  "9842bcfe-aa6d-46ee-b060-f38a5a43ff1d": {
+    "balance": 810.03,
+    "cards": [],
+    "transactions": [
+      {
+        "amount": -49.99,
+        "description": "Sepet Satın Alımı",
+        "date": "2025-12-24 18:51:16"
+      },
+      {
+        "amount": -49.99,
+        "description": "Sepet Satın Alımı",
+        "date": "2025-12-24 18:51:21"
+      },
+      {
+        "amount": -89.99,
+        "description": "Sepet Satın Alımı",
+        "date": "2025-12-24 19:13:48"
+      }
+    ]
+  },
+  "emr": {
+    "balance": 821.5699999999999,
+    "cards": [],
+    "transactions": [
+      {
+        "amount": -49.99,
+        "description": "Sepet Satın Alımı",
+        "date": "2025-12-24 18:51:16"
+      },
+      {
+        "amount": -49.99,
+        "description": "Sepet Satın Alımı",
+        "date": "2025-12-24 18:51:21"
+      },
+      {
+        "type": "Alışveriş",
+        "amount": -20.99,
+        "date": "24.12.2025 19:49"
+      },
+      {
+        "type": "Alışveriş",
+        "amount": -57.459999999999994,
+        "date": "24.12.2025 19:49"
+      }
+    ]
+  },
+  "arda": {
+    "balance": 108.0,
+    "cards": [],
+    "transactions": [
+      {
+        "type": "Alışveriş",
+        "amount": -179.99,
+        "date": "24.12.2025 21:24"
+      },
+      {
+        "type": "Alışveriş",
+        "amount": -69.98,
+        "date": "24.12.2025 21:30"
+      },
+      {
+        "type": "Alışveriş",
+        "amount": -94.97999999999999,
+        "date": "24.12.2025 21:31"
+      },
+      {
+        "type": "deposit",
+        "amount": 300.0,
+        "date": "24.12.2025 21:32",
+        "description": "Para Yatırma"
+      },
+      {
+        "type": "deposit",
+        "amount": 44.0,
+        "date": "24.12.2025 21:32",
+        "description": "Para Yatırma"
+      },
+      {
+        "type": "deposit",
+        "amount": 0.94,
+        "date": "24.12.2025 21:33",
+        "description": "Para Yatırma"
+      },
+      {
+        "type": "Alışveriş",
+        "amount": -999.99,
+        "date": "24.12.2025 21:33"
+      },
+      {
+        "type": "deposit",
+        "amount": 80000.0,
+        "date": "24.12.2025 21:53",
+        "description": "Para Yatırma"
+      },
+      {
+        "type": "deposit",
+        "amount": 1000000.0,
+        "date": "24.12.2025 22:03",
+        "description": "Para Yatırma"
+      }
+    ]
+  },
+  "ca12c787a31a7f8b5a9e3f40f027fea6": {
+    "balance": 0,
+    "cards": [],
+    "transactions": []
+  },
+  "arda83": {
+    "balance": 970.01,
+    "cards": [],
+    "transactions": [
+      {
+        "type": "Alışveriş",
+        "amount": -29.99,
+        "date": "24.12.2025 21:27"
+      }
+    ]
+  },
+  "4fd2cbe769e0a875a1be2ad4fcf68808": {
+    "balance": 51550.0,
+    "cards": [],
+    "transactions": [
+      {
+        "amount": -100,
+        "description": "İşçi alındı (Business Game)",
+        "date": "2025-12-24 21:57:50"
+      },
+      {
+        "amount": -100,
+        "description": "İşçi alındı (Business Game)",
+        "date": "2025-12-24 21:57:52"
+      },
+      {
+        "amount": -100,
+        "description": "İşçi alındı (Business Game)",
+        "date": "2025-12-24 21:57:53"
+      },
+      {
+        "amount": -100,
+        "description": "İşçi alındı (Business Game)",
+        "date": "2025-12-24 21:57:53"
+      },
+      {
+        "amount": -100,
+        "description": "İşçi alındı (Business Game)",
+        "date": "2025-12-24 21:57:53"
+      },
+      {
+        "amount": -100,
+        "description": "İşçi alındı (Business Game)",
+        "date": "2025-12-24 21:57:53"
+      },
+      {
+        "amount": -100,
+        "description": "İşçi alındı (Business Game)",
+        "date": "2025-12-24 21:57:54"
+      },
+      {
+        "amount": -100,
+        "description": "İşçi alındı (Business Game)",
+        "date": "2025-12-24 21:57:54"
+      },
+      {
+        "amount": -100,
+        "description": "İşçi alındı (Business Game)",
+        "date": "2025-12-24 21:57:54"
+      },
+      {
+        "amount": -100,
+        "description": "İşçi alındı (Business Game)",
+        "date": "2025-12-24 21:57:54"
+      },
+      {
+        "amount": 500,
+        "description": "Business Game geliri",
+        "date": "2025-12-24 21:57:55"
+      },
+      {
+        "amount": 500,
+        "description": "Business Game geliri",
+        "date": "2025-12-24 21:57:56"
+      },
+      {
+        "amount": 500,
+        "description": "Business Game geliri",
+        "date": "2025-12-24 21:57:57"
+      },
+      {
+        "amount": 500,
+        "description": "Business Game geliri",
+        "date": "2025-12-24 21:57:57"
+      },
+      {
+        "amount": 500,
+        "description": "Business Game geliri",
+        "date": "2025-12-24 21:57:57"
+      },
+      {
+        "amount": 500,
+        "description": "Business Game geliri",
+        "date": "2025-12-24 21:57:57"
+      },
+      {
+        "amount": 500,
+        "description": "Business Game geliri",
+        "date": "2025-12-24 21:57:58"
+      },
+      {
+        "amount": 500,
+        "description": "Business Game geliri",
+        "date": "2025-12-24 21:57:58"
+      },
+      {
+        "amount": 500,
+        "description": "Business Game geliri",
+        "date": "2025-12-24 21:57:58"
+      },
+      {
+        "amount": 500,
+        "description": "Business Game geliri",
+        "date": "2025-12-24 21:57:58"
+      },
+      {
+        "amount": 500,
+        "description": "Business Game geliri",
+        "date": "2025-12-24 21:57:58"
+      },
+      {
+        "amount": 500,
+        "description": "Business Game geliri",
+        "date": "2025-12-24 21:57:58"
+      },
+      {
+        "amount": 500,
+        "description": "Business Game geliri",
+        "date": "2025-12-24 21:57:59"
+      },
+      {
+        "amount": 500,
+        "description": "Business Game geliri",
+        "date": "2025-12-24 21:57:59"
+      },
+      {
+        "amount": 500,
+        "description": "Business Game geliri",
+        "date": "2025-12-24 21:57:59"
+      },
+      {
+        "amount": 500,
+        "description": "Business Game geliri",
+        "date": "2025-12-24 21:57:59"
+      },
+      {
+        "amount": 500,
+        "description": "Business Game geliri",
+        "date": "2025-12-24 21:57:59"
+      },
+      {
+        "amount": -100,
+        "description": "İşçi alındı (Business Game)",
+        "date": "2025-12-24 21:58:40"
+      },
+      {
+        "amount": -100,
+        "description": "İşçi alındı (Business Game)",
+        "date": "2025-12-24 21:58:40"
+      },
+      {
+        "amount": -100,
+        "description": "İşçi alındı (Business Game)",
+        "date": "2025-12-24 21:58:40"
+      },
+      {
+        "amount": -100,
+        "description": "İşçi alındı (Business Game)",
+        "date": "2025-12-24 21:58:41"
+      },
+      {
+        "amount": -100,
+        "description": "İşçi alındı (Business Game)",
+        "date": "2025-12-24 21:58:41"
+      },
+      {
+        "amount": -100,
+        "description": "İşçi alındı (Business Game)",
+        "date": "2025-12-24 21:58:41"
+      },
+      {
+        "amount": -100,
+        "description": "İşçi alındı (Business Game)",
+        "date": "2025-12-24 21:58:41"
+      },
+      {
+        "amount": -100,
+        "description": "İşçi alındı (Business Game)",
+        "date": "2025-12-24 21:58:42"
+      },
+      {
+        "amount": -100,
+        "description": "İşçi alındı (Business Game)",
+        "date": "2025-12-24 21:58:42"
+      },
+      {
+        "amount": -100,
+        "description": "İşçi alındı (Business Game)",
+        "date": "2025-12-24 21:58:42"
+      },
+      {
+        "amount": -100,
+        "description": "İşçi alındı (Business Game)",
+        "date": "2025-12-24 21:58:42"
+      },
+      {
+        "amount": -100,
+        "description": "İşçi alındı (Business Game)",
+        "date": "2025-12-24 21:58:42"
+      },
+      {
+        "amount": -100,
+        "description": "İşçi alındı (Business Game)",
+        "date": "2025-12-24 21:58:43"
+      },
+      {
+        "amount": -100,
+        "description": "İşçi alındı (Business Game)",
+        "date": "2025-12-24 21:58:43"
+      },
+      {
+        "amount": -100,
+        "description": "İşçi alındı (Business Game)",
+        "date": "2025-12-24 21:58:43"
+      },
+      {
+        "amount": -100,
+        "description": "İşçi alındı (Business Game)",
+        "date": "2025-12-24 21:58:43"
+      },
+      {
+        "amount": -100,
+        "description": "İşçi alındı (Business Game)",
+        "date": "2025-12-24 21:58:43"
+      },
+      {
+        "amount": -100,
+        "description": "İşçi alındı (Business Game)",
+        "date": "2025-12-24 21:58:43"
+      },
+      {
+        "amount": 1400,
+        "description": "Business Game geliri",
+        "date": "2025-12-24 21:58:44"
+      },
+      {
+        "amount": 1400,
+        "description": "Business Game geliri",
+        "date": "2025-12-24 21:58:44"
+      },
+      {
+        "amount": 1400,
+        "description": "Business Game geliri",
+        "date": "2025-12-24 21:58:45"
+      },
+      {
+        "amount": 1400,
+        "description": "Business Game geliri",
+        "date": "2025-12-24 21:58:45"
+      },
+      {
+        "amount": 1400,
+        "description": "Business Game geliri",
+        "date": "2025-12-24 21:58:45"
+      },
+      {
+        "amount": 1400,
+        "description": "Business Game geliri",
+        "date": "2025-12-24 21:58:45"
+      },
+      {
+        "amount": 1400,
+        "description": "Business Game geliri",
+        "date": "2025-12-24 21:58:45"
+      },
+      {
+        "amount": 1400,
+        "description": "Business Game geliri",
+        "date": "2025-12-24 21:58:45"
+      },
+      {
+        "amount": 1400,
+        "description": "Business Game geliri",
+        "date": "2025-12-24 21:58:45"
+      },
+      {
+        "amount": 1400,
+        "description": "Business Game geliri",
+        "date": "2025-12-24 21:58:46"
+      },
+      {
+        "amount": 1400,
+        "description": "Business Game geliri",
+        "date": "2025-12-24 21:58:47"
+      },
+      {
+        "amount": 1400,
+        "description": "Business Game geliri",
+        "date": "2025-12-24 21:58:47"
+      },
+      {
+        "amount": 1400,
+        "description": "Business Game geliri",
+        "date": "2025-12-24 21:58:48"
+      },
+      {
+        "amount": 1400,
+        "description": "Business Game geliri",
+        "date": "2025-12-24 21:58:48"
+      },
+      {
+        "amount": 1400,
+        "description": "Business Game geliri",
+        "date": "2025-12-24 21:58:48"
+      },
+      {
+        "amount": 1400,
+        "description": "Business Game geliri",
+        "date": "2025-12-24 21:58:48"
+      },
+      {
+        "amount": 1400,
+        "description": "Business Game geliri",
+        "date": "2025-12-24 21:58:48"
+      },
+      {
+        "amount": 1400,
+        "description": "Business Game geliri",
+        "date": "2025-12-24 21:58:49"
+      },
+      {
+        "amount": 1400,
+        "description": "Business Game geliri",
+        "date": "2025-12-24 21:58:49"
+      },
+      {
+        "amount": 1400,
+        "description": "Business Game geliri",
+        "date": "2025-12-24 21:58:49"
+      },
+      {
+        "amount": 1400,
+        "description": "Business Game geliri",
+        "date": "2025-12-24 21:58:49"
+      },
+      {
+        "amount": 1400,
+        "description": "Business Game geliri",
+        "date": "2025-12-24 21:58:49"
+      },
+      {
+        "amount": 1400,
+        "description": "Business Game geliri",
+        "date": "2025-12-24 21:58:50"
+      },
+      {
+        "amount": 1400,
+        "description": "Business Game geliri",
+        "date": "2025-12-24 21:58:50"
+      },
+      {
+        "amount": 1400,
+        "description": "Business Game geliri",
+        "date": "2025-12-24 21:58:50"
+      },
+      {
+        "amount": 1400,
+        "description": "Business Game geliri",
+        "date": "2025-12-24 21:58:50"
+      },
+      {
+        "amount": 1400,
+        "description": "Business Game geliri",
+        "date": "2025-12-24 21:58:50"
+      },
+      {
+        "amount": 1400,
+        "description": "Business Game geliri",
+        "date": "2025-12-24 21:58:51"
+      },
+      {
+        "amount": 1400,
+        "description": "Business Game geliri",
+        "date": "2025-12-24 21:58:51"
+      },
+      {
+        "amount": 1400,
+        "description": "Business Game geliri",
+        "date": "2025-12-24 21:58:51"
+      },
+      {
+        "amount": 1400,
+        "description": "Business Game geliri",
+        "date": "2025-12-24 21:58:51"
+      },
+      {
+        "amount": 1400,
+        "description": "Business Game geliri",
+        "date": "2025-12-24 21:58:52"
+      },
+      {
+        "amount": 50,
+        "description": "Challenge Oyunu Ödülü",
+        "date": "2025-12-24 22:25:23"
+      }
+    ]
+  }
+}

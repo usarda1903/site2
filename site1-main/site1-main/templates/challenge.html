@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mistik Challenge Oyunu</title>
+    <style>
+        /* Modern Font İçeri Aktarma */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+        /* Genel Arka Plan: Koyu Mavi/Mor Gradyan */
+        body {
+            background: radial-gradient(circle at top right, #1e1b4b, #0f172a, #020617);
+            background-attachment: fixed;
+            color: #e2e8f0;
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Cam Efektli Ana Kart (Glassmorphism) */
+        .card {
+            background: rgba(30, 41, 59, 0.45);
+            backdrop-filter: blur(16px) saturate(180%);
+            -webkit-backdrop-filter: blur(16px) saturate(180%);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 28px;
+            max-width: 700px;
+            width: 100%;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Başlık Tasarımı: Neon Gradyan */
+        h1 {
+            text-align: center;
+            font-size: 2.8rem;
+            background: linear-gradient(to right, #a5b4fc, #e879f9);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-top: 0;
+            margin-bottom: 30px;
+            font-weight: 700;
+            text-shadow: 0 10px 20px rgba(168, 85, 247, 0.2);
+        }
+
+        /* Soru Konteynırı */
+        .q {
+            margin-bottom: 25px;
+            padding: 25px;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .q:hover {
+            background: rgba(255, 255, 255, 0.07);
+            border-color: rgba(139, 92, 246, 0.3);
+            transform: scale(1.01);
+        }
+
+        .q p {
+            font-size: 1.15rem;
+            margin-bottom: 20px;
+            color: #f8fafc;
+            font-weight: 600;
+        }
+
+        /* Seçenekler (Radyo Butonları) */
+        label {
+            display: flex;
+            align-items: center;
+            padding: 14px 18px;
+            margin: 10px 0;
+            cursor: pointer;
+            border-radius: 12px;
+            background: rgba(15, 23, 42, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.2s ease;
+        }
+
+        label:hover {
+            background: rgba(99, 102, 241, 0.15);
+            border-color: rgba(129, 140, 248, 0.5);
+            color: #fff;
+        }
+
+        input[type="radio"] {
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            border: 2px solid #6366f1;
+            border-radius: 50%;
+            margin-right: 15px;
+            position: relative;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        input[type="radio"]:checked {
+            background-color: #818cf8;
+            border-color: #a855f7;
+            box-shadow: 0 0 10px rgba(129, 140, 248, 0.8);
+        }
+
+        input[type="radio"]:checked::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 8px;
+            height: 8px;
+            background: white;
+            border-radius: 50%;
+        }
+
+        /* Mistik Gönder Butonu */
+        button {
+            margin-top: 30px;
+            padding: 20px;
+            width: 100%;
+            font-size: 1.2rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 50%, #db2777 100%);
+            color: white;
+            border: none;
+            border-radius: 16px;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 15px 30px -10px rgba(79, 70, 229, 0.6);
+        }
+
+        button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 25px 40px -15px rgba(124, 58, 237, 0.8);
+            filter: brightness(1.2);
+        }
+
+        button:active {
+            transform: scale(0.97);
+        }
+
+        /* Mobil Uyumluluk */
+        @media (max-width: 640px) {
+            .card { padding: 25px; }
+            h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h1>🎯 Challenge</h1>
+
+    <form method="POST">
+        {% for q in questions %}
+        <div class="q">
+            <p>{{ q.question }}</p>
+            {% for opt in q.options %}
+                <label>
+                    <input type="radio" name="{{ q.id }}" value="{{ opt }}" required>
+                    <span>{{ opt }}</span>
+                </label>
+            {% endfor %}
+        </div>
+        {% endfor %}
+
+        <button type="submit">Enerjiyi Gönder</button>
+    </form>
+</div>
+
+</body>
+</html>
